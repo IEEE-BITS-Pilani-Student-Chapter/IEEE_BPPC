@@ -42,25 +42,25 @@
             crossorigin="anonymous"></script>
 
     <!-- bootstrap -->
-    <!-- <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" crossorigin="anonymous"></script> -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" crossorigin="anonymous"></script>
 </head>
 <body>
     <!-- NAV -->
     <header>
         <nav>
-            <div class="row">
-                <div class="logo logo-black"><img src="{% static 'img/logo.jpg' %}" width="100" height="30" alt="IEEE" style="padding-top: 10px;padding-left: 5px;"></div>
+            <div class="navbar fixed-top navbar-expand-bg">
+                <div class="logo logo-black"><img src="{% static 'img/logo.jpg' %}" width="100" height="60" alt="IEEE" style="padding-top: 10px;padding-left: 5px;"></div>
                 <!--<img src="resources/img/logo.png" alt="Omnifood logo" class="logo-black">-->
                 <ul class="main-nav js--main-nav">
                     
-                    <li><a href="#features">ABOUT </a></li>
-                    <li><a href="#cities">Blog</a></li>
-                    <li><a href="#works">Community</a></li>
+                    <li class="nav-item" ><a class="nav-link" href="#features">ABOUT </a></li>
+                    <li class="nav-item" ><a class="nav-link" href="#cities">Blog</a></li>
+                    <li class="nav-item" ><a class="nav-link" href="#works">Community</a></li>
                     
-                    <li><a href="#plans">Events & Activities</a></li>
-                    <li><a href="#resources">Member Resources</a></li>
+                    <li class="nav-item" ><a class="nav-link" href="#plans">Events & Activities</a></li>
+                    <li class="nav-item" ><a class="nav-link" href="#resources">Member Resources</a></li>
                 </ul>
                 <a class="mobile-nav-icon js--nav-icon"><i class="ion-navicon-round"></i></a>
             </div>
@@ -75,7 +75,7 @@
     {% block content %}
     {% endblock %}
     <!-- FOOTER -->
-    
+
     <footer>
         <div class="row">
           
