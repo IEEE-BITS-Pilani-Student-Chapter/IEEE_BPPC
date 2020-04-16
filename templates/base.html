@@ -5,25 +5,125 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>
-        {% block title %}
-        {% endblock %}
-    </title>
-    <!-- jquery -->
+    <meta charset="utf-8">
+    <meta name="discription" content="IEEE website">
+    <link rel="stylesheet" type="text/css" href="{% static 'vendors/css/normalize.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'vendors/css/grid.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'vendors/css/ionicons.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'vendors/css/animate.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/queries.css' %}">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,300,100,300italic' rel='stylesheet' type='text/css'>
+    <link rel="apple-touch-icon" sizes="57x57" href="{% static 'favicons/apple-touch-icon-57x57.png' %}">
+    <link rel="apple-touch-icon" sizes="60x60" href="{% static 'favicons/apple-touch-icon-60x60.png' %}">
+    <link rel="apple-touch-icon" sizes="72x72" href="{% static 'favicons/apple-touch-icon-72x72.png' %}">
+    <link rel="apple-touch-icon" sizes="76x76" href="{% static 'favicons/apple-touch-icon-76x76.png' %}">
+    <link rel="apple-touch-icon" sizes="114x114" href="{% static 'favicons/apple-touch-icon-114x114.png' %}">
+    <link rel="apple-touch-icon" sizes="120x120" href="{% static 'favicons/apple-touch-icon-120x120.png' %}">
+    <link rel="apple-touch-icon" sizes="144x144" href="{% static 'favicons/apple-touch-icon-144x144.png' %}">
+    <link rel="apple-touch-icon" sizes="152x152" href="{% static 'favicons/apple-touch-icon-152x152.png' %}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static 'favicons/apple-touch-icon-180x180.png' %}">
+    <link rel="icon" type="image/png" href="{% static 'favicons/favicon-32x32.png' %}" sizes="32x32">
+    <link rel="icon" type="image/png" href="{% static 'favicons/favicon-194x194.png' %}" sizes="194x194">
+    <link rel="icon" type="image/png" href="{% static 'favicons/favicon-96x96.png' %}" sizes="96x96">
+    <link rel="icon" type="image/png" href="{% static 'favicons/android-chrome-192x192.png' %}" sizes="192x192">
+    <link rel="icon" type="image/png" href="{% static 'favicons/favicon-16x16.png' %}" sizes="16x16">
+    <link rel="manifest" href="{% static 'favicons/manifest.json' %}">
+    <link rel="mask-icon" href="{% static 'favicons/safari-pinned-tab.svg' %}">
+    <link rel="shortcut icon" href="{% static 'favicons/favicon.ico' %}">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-TileImage" content="{% static 'favicons/mstile-144x144.png' %}">
+    <meta name="msapplication-config" content="{% static 'favicons/browserconfig.xml' %}">
+    <meta name="theme-color" content="#ffffff">
+    <title>IEEE</title>
+    <!-- jquery 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
             integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
             crossorigin="anonymous"></script>
 
     <!-- bootstrap -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" crossorigin="anonymous"></script>
-
-    <script src="{% static 'js/main.js' %}"></script>
-    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" crossorigin="anonymous"></script> --> -->
 </head>
 <body>
+    <!-- NAV -->
+    <header>
+        <nav>
+            <div class="row">
+                <!--<img src="resources/img/logo-white.png" alt="Omnifood logo" class="logo">-->
+                <div class="logo logo-black">IEEE</div>
+                <!--<img src="resources/img/logo.png" alt="Omnifood logo" class="logo-black">-->
+                <ul class="main-nav js--main-nav">
+                    
+                    <li><a href="#features">ABOUT </a></li>
+                    <li><a href="#cities">Blog</a></li>
+                    <li><a href="#works">Community</a></li>
+                    
+                    <li><a href="#plans">Events & Activities</a></li>
+                    <li><a href="#resources">Member Resources</a></li>
+                </ul>
+                <a class="mobile-nav-icon js--nav-icon"><i class="ion-navicon-round"></i></a>
+            </div>
+            
+        </nav>
+        <div class="hero-text-box">
+            <div id="hea"><h1>Some Random Text Maybe.<br><h3>If we are not using parallax then it can work.</div></h3><br><br></h1>
+            <a class="btn btn-full js--scroll-to-plans" href="#">Learn More</a><!--
+            <a class="btn btn-ghost js--scroll-to-start" href="#">Learn More</a>-->
+            
+        </div>            
+    </header>
     {% block content %}
     {% endblock %}
+    <!-- FOOTER -->
+    
+    <footer>
+        <div class="row">
+          
+          <div class="col span-2-of-7"><h1 class="head">
+            IEEE
+          </h1>
+          <h5>
+            2210-C,FD-2,BITS Pilani,Pilani
+          </h5>
+          </div>
+          
+          <div class="col span-2-of-7">
+            <h3 class="head">
+              CONTACT US
+            </h3><h5>
+            ieee.bpsc@gmail.com</h5>
+          </div>
+          <div class="col span-1-of-7">
+              <h3 class="head">
+                CUSTOMER SERVICE
+              </h3><h5 >
+              Contact Us<br>
+              Ordering & Payment<br>
+              Shipping<br>
+              Returns<br>
+              FAQ<br></h5>
+          </div>
+          <div class="col span-1-of-7"></div>
+
+        </div>
+
+        <div class="row">
+            <p>
+                Copyright Information
+            </p>
+            <p align="center">
+            When you visit or interact with our site,services or tools,we or our authorised service providers may use cookies for storing information to help provide you with a better,faster and safer experience and for marketing purposes.
+            </p>
+        </div>
+        
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>    
+    <script src="https://cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/selectivizr/1.0.3b/selectivizr.min.js"></script> 
+    <script src="{% static 'vendors/js/jquery.waypoints.min.js' %}"></script>
+    <script src="{% static 'js/script.js' %}"></script>
 </body>
 </html>
