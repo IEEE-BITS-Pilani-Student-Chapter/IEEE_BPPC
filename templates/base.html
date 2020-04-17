@@ -50,10 +50,11 @@
 <body>
     <!-- NAV -->
     <header>
-        <nav>
+      <!--
+        <nav class="fixed-top bg-dark">
             <div class="navbar fixed-top navbar-expand-bg">
                 <div class="logo logo-black"><img src="{% static 'img/logo.jpg' %}" width="100" height="60" alt="IEEE" style="padding-top: 10px;padding-left: 5px;"></div>
-                <!--<img src="resources/img/logo.png" alt="Omnifood logo" class="logo-black">-->
+               // <!/--<img src="resources/img/logo.png" alt="Omnifood logo" class="logo-black">/-/->
                 <ul class="main-nav js--main-nav">
                     
                     <li class="nav-item" ><a class="nav-link" href="#features">ABOUT </a></li>
@@ -65,9 +66,40 @@
                 </ul>
                 <a class="mobile-nav-icon js--nav-icon"><i class="ion-navicon-round"></i></a>
             </div>
-        </nav>
+        </nav>-->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #21325B;">
+          <div class="container">
+          <a href="/" class="navbar-brand"><b>IEEE</b></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar4">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="navbar-collapse collapse" id="navbar4">
+              <ul class="navbar-nav ml-auto">
+                  <li class="nav-item active">
+                      <a class="nav-link" href="#">ABOUT</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="#">BLOG</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">COMMUNITY</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">EVENTS & ACTIVITIES</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">MEMBER RESOURCES</a>
+                  </li>
+              </ul>
+          </div>
+          </div>
+      </nav>
+      
+        
+
+
         <div class="hero-text-box">
-            <div id="hea"><h1>Some Random Text Maybe.<br><h3>If we are not using parallax then it can work.</div></h3><br><br></h1>
+            <div id="hea"><h1><strong>Some Random Text Maybe.</strong><br><h3>If we are not using parallax then it can work.</div></h3><br><br></h1>
             <a class="btn btn-full js--scroll-to-plans" href="#">Learn More</a><!--
             <a class="btn btn-ghost js--scroll-to-start" href="#">Learn More</a>-->
             
@@ -76,55 +108,64 @@
     {% block content %}
     {% endblock %}
     <!-- FOOTER -->
-
-    <footer>
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-4"><h3 class="head">
-            IEEE
-          </h3>
-          <h5>
-            2210-C,FD-2,BITS Pilani,Pilani
-          </h5>
-          </div>
-          
-          <div class="col-4">
-            <h3 class="head">
-              CONTACT US
-            </h3><h5>
-            ieee.bpsc@gmail.com</h5>
-          </div>
-          <div class="col-4">
-              <h3 class="head">
-                CUSTOMER SERVICE
-              </h3><h5 >
-              Contact Us<br>
-              Ordering & Payment<br>
-              Shipping<br>
-              Returns<br>
-              FAQ<br></h5>
-          </div>
-
+    <footer class="pt-4 my-md-5 pt-md-5 border-top sticky-bottom">
+      <div class="row">
+        <div class="col-12 col-md">
+          <img class="mb-2" src="/docs/4.4/assets/brand/bootstrap-solid.svg" alt="" width="24" height="24">
+          <small class="d-block mb-3 text-muted">© 2017-2019</small>
         </div>
-
-        <div class="row">
-          <div class="col">
-            <p>
-                Copyright Information
-            </p>
-            <p align="center">
-            When you visit or interact with our site,services or tools,we or our authorised service providers may use cookies for storing information to help provide you with a better,faster and safer experience and for marketing purposes.
-            </p>
-            </div>
+        <div class="col-6 col-md">
+          <h5>Features</h5>
+          <ul class="list-unstyled text-small">
+            <li><a class="text" href="#">Cool stuff</a></li>
+            <li><a class="text" href="#">Random feature</a></li>
+            <li><a class="text" href="#">Team feature</a></li>
+            <li><a class="text" href="#">Stuff for developers</a></li>
+            <li><a class="text" href="#">Another one</a></li>
+            <li><a class="text" href="#">Last time</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md">
+          <h5>Resources</h5>
+          <ul class="list-unstyled text-small">
+            <li><a class="text" href="#">Resource</a></li>
+            <li><a class="text" href="#">Resource name</a></li>
+            <li><a class="text" href="#">Another resource</a></li>
+            <li><a class="text" href="#">Final resource</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md">
+          <h5>About</h5>
+          <ul class="list-unstyled text-small">
+            <li><a class="text" href="#">Team</a></li>
+            <li><a class="text" href="#">Locations</a></li>
+            <li><a class="text" href="#">Privacy</a></li>
+            <li><a class="text" href="#">Terms</a></li>
+          </ul>
         </div>
       </div>
-        
+
+      <div class="row">
+        <div class="col">
+          <p>
+              Copyright Information<small class="d-block mb-3 text-muted">© 2017-2020</small>
+          </p>
+          <p class="d-block mb-3 text-muted">
+          When you visit or interact with our site,services or tools,we or our authorised service providers may use cookies for storing information to help provide you with a better,faster and safer experience and for marketing purposes.
+          </p>
+          </div>
+      </div>
     </footer>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>    
     <script src="https://cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
     <script src="https://cdn.jsdelivr.net/html5shiv/3.7.3/html5shiv.min.js"></script>
     <script src="https://cdn.jsdelivr.net/selectivizr/1.0.3b/selectivizr.min.js"></script> 
     <script src="{% static 'vendors/js/jquery.waypoints.min.js' %}"></script>
     <script src="{% static 'js/script.js' %}"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
 </body>
 </html>

@@ -100,36 +100,16 @@ h3 {
 
 
 /* ----- ICONS ----- */
-.icon-big {
-    font-size: 350%;
-    display: block;
-    color: #e67e22;
-    margin-bottom: 10px;
-    
-}
 
-.icon-small {
-    display: inline-block;
-    width: 30px;
-    text-align: center;
-    color: #e67e22;
-    font-size: 120%;
-    margin-right: 10px;
-    line-height: 120%;
-    vertical-align: middle;
-    margin-top: -5px;
-}
+
 
 /* ----- LINKS ----- */
 
 a:link,
 a:visited {
-    color: #e67e22;
+   
     text-decoration: none;
     padding-bottom: 1px;
-    border-bottom: 1px solid #e67e22;
-    -webkit-transition: border-bottom 0.2s, color 0.2s;
-    transition: border-bottom 0.2s, color 0.2s;
 }
 
 
@@ -155,11 +135,7 @@ input[type=submit] {
     margin-right: 15px;
 }
 
-.btn-ghost:link,
-.btn-ghost:visited {
-    border: 1px solid #e67e22;
-    color: #e67e22;
-}
+
 
 .btn:hover,
 .btn:active,
@@ -233,7 +209,7 @@ opacity: 1;
     margin-right:25px;
 }
 
-/* Main navi */
+/* Main navi 
 .main-nav {
     float: right;
     list-style: none;
@@ -256,14 +232,8 @@ opacity: 1;
     -webkit-transition: border-bottom 0.2s;
     transition: border-bottom 0.2s;
 }
-
-.main-nav li a:hover,
-.main-nav li a:active {
-    border-bottom: 2px solid #e67e22;
-}
-
-
-/* Mobile navi */
+*/
+/* Mobile navi 
 .mobile-nav-icon {
     float: right;
     margin-top: 30px;
@@ -275,9 +245,10 @@ opacity: 1;
     font-size: 200%;
     color: #fff;
 }
+*/
+/*
 
-
-/* Sticky navi */
+ Sticky navi 
 .sticky {
     position: fixed;
     top: 0;
@@ -305,7 +276,7 @@ color: white;
     padding-top: 12px;
     font-weight: 900;
  }
-
+*/
 /* ----------------------------------------------- */
 /* FEATURES */
 /* ----------------------------------------------- */
@@ -682,7 +653,7 @@ footer {
 
 
 footer p {
-    color: #888;
+    color: white;
     text-align: center;
     margin-top: 20px;
 }
@@ -1050,3 +1021,9 @@ h5{
     font-weight:600;
 } 
 
+footer{
+    color:white;
+}
+footer a{
+    color:white;
+}
