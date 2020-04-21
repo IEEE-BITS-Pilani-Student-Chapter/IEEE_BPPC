@@ -37,11 +37,11 @@
     <meta name="msapplication-config" content="{% static 'favicons/browserconfig.xml' %}">
     <meta name="theme-color" content="#ffffff">
     <title>IEEE</title>
-    <!-- jquery 
+    <!-- jquery  -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
             integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-            crossorigin="anonymous"></script>
-
+            crossorigin="anonymous">
+    </script>
     <!-- bootstrap -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
@@ -50,24 +50,7 @@
 <body>
     <!-- NAV -->
     <header>
-      <!--
-        <nav class="fixed-top bg-dark">
-            <div class="navbar fixed-top navbar-expand-bg">
-                <div class="logo logo-black"><img src="{% static 'img/logo.jpg' %}" width="100" height="60" alt="IEEE" style="padding-top: 10px;padding-left: 5px;"></div>
-               // <!/--<img src="resources/img/logo.png" alt="Omnifood logo" class="logo-black">/-/->
-                <ul class="main-nav js--main-nav">
-                    
-                    <li class="nav-item" ><a class="nav-link" href="#features">ABOUT </a></li>
-                    <li class="nav-item" ><a class="nav-link" href="#cities">Blog</a></li>
-                    <li class="nav-item" ><a class="nav-link" href="#works">Community</a></li>
-                    
-                    <li class="nav-item" ><a class="nav-link" href="#plans">Events & Activities</a></li>
-                    <li class="nav-item" ><a class="nav-link" href="#resources">Member Resources</a></li>
-                </ul>
-                <a class="mobile-nav-icon js--nav-icon"><i class="ion-navicon-round"></i></a>
-            </div>
-        </nav>-->
-        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #21325B;">
+        <nav class="navbar navbar-expand-md navbar-dark bg fixed-top">
           <div class="container">
           <a href="/" class="navbar-brand"><b>IEEE</b></a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar4">
@@ -108,13 +91,13 @@
     {% block content %}
     {% endblock %}
     <!-- FOOTER -->
-    <footer class="pt-4 my-md-0 pt-md-5 border-top sticky-bottom">
-      <div class="row">
-        <div class="col-12 col-md">
-          <img class="mb-2" src="/docs/4.4/assets/brand/bootstrap-solid.svg" alt="" width="24" height="24">
-          <small class="d-block mb-3 text-muted">© 2017-2019</small>
+    <footer class="border-top sticky-bottom">
+      <div class="row" style="padding-right: 20%;padding-left: 20%;">
+        <div class="col-md-auto"></div>
+        <div class="col-md-auto">
+          <h2>IEEE</h2>
         </div>
-        <div class="col-6 col-md">
+        <div class="col-md-auto">
           <h5>Features</h5>
           <ul class="list-unstyled text-small">
             <li><a class="text" href="#">Cool stuff</a></li>
@@ -125,7 +108,7 @@
             <li><a class="text" href="#">Last time</a></li>
           </ul>
         </div>
-        <div class="col-6 col-md">
+        <div class="col-md-auto">
           <h5>Resources</h5>
           <ul class="list-unstyled text-small">
             <li><a class="text" href="#">Resource</a></li>
@@ -134,7 +117,7 @@
             <li><a class="text" href="#">Final resource</a></li>
           </ul>
         </div>
-        <div class="col-6 col-md">
+        <div class="col-md-auto">
           <h5>About</h5>
           <ul class="list-unstyled text-small">
             <li><a class="text" href="#">Team</a></li>
@@ -143,10 +126,12 @@
             <li><a class="text" href="#">Terms</a></li>
           </ul>
         </div>
+        <div class="col-md-auto"></div>
       </div>
 
-      <div class="row">
-        <div class="col">
+      <div class="row" style="padding-right: 15%;padding-left: 15%;">
+        <div class="col-2"></div>
+        <div class="col-md-auto">
           <p>
               Copyright Information<small class="d-block mb-3 text-muted">© 2017-2020</small>
           </p>
@@ -154,6 +139,7 @@
           When you visit or interact with our site,services or tools,we or our authorised service providers may use cookies for storing information to help provide you with a better,faster and safer experience and for marketing purposes.
           </p>
           </div>
+          <div class="col-2"></div>
       </div>
     </footer>
 
@@ -163,9 +149,9 @@
     <script src="https://cdn.jsdelivr.net/selectivizr/1.0.3b/selectivizr.min.js"></script> 
     <script src="{% static 'vendors/js/jquery.waypoints.min.js' %}"></script>
     <script src="{% static 'js/script.js' %}"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-</body>
+    <!-- <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script> -->
+  </body>
 </body>
 </html>

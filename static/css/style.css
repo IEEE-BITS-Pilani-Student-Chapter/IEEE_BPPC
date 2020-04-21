@@ -28,12 +28,8 @@ body {
     visibility: hidden;
 }
 
-//REUSABLE
+/* REUSABLE */
 
-.row {
-    max-width: 1140px;
-    margin: 0 auto;
-}
 
 section {
     padding: 80px 0;
@@ -210,77 +206,14 @@ opacity: 1;
     margin-right:25px;
 }
 
-/* Main navi 
-.main-nav {
-    float: right;
-    list-style: none;
-    margin-top: 25px;
+/* NAV */
+.bg{
+  transition: 500ms ease;
+  background-color: transparent !important;
 }
-
-.main-nav li {
-    display: inline-block;
-    margin-left: 20px;
+.bg.scrolled{
+  background-color: #21325B !important;
 }
-
-.main-nav li a:link,
-.main-nav li a:visited {
-    padding: 8px 0;
-    color: #FFFFFFD9;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 90%;
-    border-bottom: 2px solid transparent;
-    -webkit-transition: border-bottom 0.2s;
-    transition: border-bottom 0.2s;
-}
-*/
-/* Mobile navi 
-.mobile-nav-icon {
-    float: right;
-    margin-top: 30px;
-    cursor: pointer;
-    display: none;
-}
-
-.mobile-nav-icon i {
-    font-size: 200%;
-    color: #fff;
-}
-*/
-/*
-
- Sticky navi 
-.sticky {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: #21325B; 
-    box-shadow: 0 2px 2px #efefef;
-    z-index: 9999;
-}
-
-.sticky .main-nav { margin-top: 18px; }
-
-.sticky .main-nav li a:link,
-.sticky .main-nav li a:visited {
-    padding: 16px 0;
-    color: #FFFFFFD9;
-}
-
-.sticky .logo { display: block;
-color: white;
-    padding-top: 12px;
-    font-weight: 900;}
-.sticky .logo-black { display: block;
-color: white;
-    padding-top: 12px;
-    font-weight: 900;
- }
-*/
-/* ----------------------------------------------- */
-/* FEATURES */
-/* ----------------------------------------------- */
 
 .section-features .long-copy {
     margin-bottom: 30px;
@@ -919,9 +852,9 @@ transition: 0.8s;
   width: 30%;
   background-color: #FFFFFF;
   color:#EEEEEE;
-  //border-radius: 10px;
+  /* border-radius: 10px; */
   border: 1px solid #7FC4FD;
-  //box-shadow: -1rem 0 3rem #2D47A9;
+  /* box-shadow: -1rem 0 3rem #2D47A9; */
 /*   margin-left: -50px; */
   transition: 0.4s ease-out;
   position: relative;
@@ -953,7 +886,7 @@ background: transparent linear-gradient(180deg, #2D47A9 0%, #297C82 100%) 0% 0% 
   max-width: 300px;
   margin: auto;
   text-align: center;
-  //font-family: arial;
+  /* font-family: arial; */
 }
 
 .sctin-comunity .tile {
