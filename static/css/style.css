@@ -1005,19 +1005,19 @@ footer a{
     right: auto;
   }
   .timeline-badge.primary {
-    background-color: #2e6da4 !important;
+    background-color: #fff !important;
   }
   .timeline-badge.success {
-    background-color: #3f903f !important;
+    background-color: #fff !important;
   }
   .timeline-badge.warning {
-    background-color: #f0ad4e !important;
+    background-color: #fff !important;
   }
   .timeline-badge.danger {
-    background-color: #d9534f !important;
+    background-color: #fff !important;
   }
   .timeline-badge.info {
-    background-color: #5bc0de !important;
+    background-color: #fff !important;
   }
   .timeline-title {
     margin-top: 0;
@@ -1087,7 +1087,7 @@ footer a{
     @media screen and (max-width:900px){
       
       .containery{
-        width:10% ;
+        width:100% ;
         padding: 20px;
         margin:20px 0px;
        
