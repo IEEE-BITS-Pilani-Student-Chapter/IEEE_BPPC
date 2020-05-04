@@ -1048,21 +1048,21 @@ footer a{
       }
     
       .community-box{
-        width: 20%;
+        width: 27%;
         height: 360px;
         padding:0% 0% 2% 0%;
 
         background: #FFFFFF;
-        margin: 0px 10px;
+        margin: 0px 0px;
         transition: 0.5s;
         border: 1px solid #BCE0FD;
         font-size: medium;
       }
       .community-box:hover{
         transform: scale(1.2);
-        
+        margin: 0px 20px;
         z-index: 2;
-        box-shadow: 2px 2px 2px #000;
+        //box-shadow: 2px 2px 2px #000;
         
       }
     .one {
@@ -1126,4 +1126,8 @@ footer a{
         background: #F1F9FF;
       
     }
+    }
+
+    .text{
+      text-decoration: none;
     }
