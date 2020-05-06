@@ -1,7 +1,12 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
-
+<header>
+<div class="hero-text-box">
+  <div id="hea"><h1><strong>Some Random Text Maybe.</strong><br><h3>If we are not using parallax then it can work.</div></h3><br><br></h1>
+  <a class="btn btn-full js--scroll-to-plans" href="#">Learn More</a>
+</div> 
+</header>           
 <div class="container" style="padding-top:3em;padding-bottom: 3em;">
   <div class="row" style="padding-bottom: 1.5em; color:white;">
     <div class="col" style="color:black;">
@@ -561,5 +566,5 @@
     </div>
   </div>
 </div>
-
+<script src="{% static 'js/script.js' %}"></script>
 {% endblock %}
