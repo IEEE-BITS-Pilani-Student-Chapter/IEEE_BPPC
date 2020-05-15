@@ -9,6 +9,7 @@ class Post(models.Model):
     date_posted = models.DateTimeField(default=timezone.now)
     date_modified = models.DateTimeField(auto_now=True)
     author = models.CharField(max_length=40)
+    img = models.ImageField(upload_to='images/')
 
     def __str__(self):
         return self.title
