@@ -3,28 +3,121 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>
-        {% block title %}
-        {% endblock %}
-    </title>
-    <!-- jquery -->
+    <meta charset="utf-8">
+    <meta name="discription" content="IEEE website">
+    <link rel="stylesheet" type="text/css" href="{% static 'vendors/css/normalize.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'vendors/css/grid.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'vendors/css/ionicons.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'vendors/css/animate.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/queries.css' %}">
+
+    <meta name="theme-color" content="#ffffff">
+    <title>IEEE</title>
+    <!-- jquery  -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
             integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-            crossorigin="anonymous"></script>
-
+            crossorigin="anonymous">
+    </script>
     <!-- bootstrap -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" crossorigin="anonymous"></script>
-
-    <script src="{% static 'js/main.js' %}"></script>
-    <link rel="stylesheet" href="{% static 'css/main.css' %}">
 </head>
 <body>
-    <div class="container">
-        {% block content %}{% endblock %}
-    </div>
+    <!-- NAV -->
+        <nav class="navbar navbar-expand-md navbar-dark bg fixed-top">
+          <div class="container">
+          <a href="{% url 'home' %}" class="navbar-brand"><b>IEEE</b></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar4">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="navbar-collapse collapse" id="navbar4">
+              <ul class="navbar-nav ml-auto">
+                  <li class="nav-item active">
+                      <a class="nav-link" href="#">ABOUT</a>
+                  </li>
+                  <li class="nav-item active">
+                     <a class="nav-link" href="#">BLOG</a>
+                  </li>
+                  <li class="nav-item active">
+                      <a class="nav-link" href="#">COMMUNITY</a>
+                  </li>
+                  <li class="nav-item active">
+                      <a class="nav-link" href="#">EVENTS & ACTIVITIES</a>
+                  </li>
+                  <li class="nav-item active">
+                      <a class="nav-link" href="{% url 'dev_page' %}">DEVELOPERS</a>
+                  </li>
+              </ul>
+          </div>
+          </div>
+      </nav>
+    {% block content %}
+    {% endblock %}
+    <!-- FOOTER -->
+    <footer class="border-top sticky-bottom">
+      <div class="row" style="padding-right: 20%;padding-left: 20%;">
+        <div class="col-md-auto"></div>
+        <div class="col-md-auto">
+          <h2>IEEE</h2>
+        </div>
+        <div class="col-md-auto">
+          <h5>Features</h5>
+          <ul class="list-unstyled text-small">
+            <li><a class="text" href="#">Cool stuff</a></li>
+            <li><a class="text" href="#">Random feature</a></li>
+            <li><a class="text" href="#">Team feature</a></li>
+            <li><a class="text" href="#">Stuff for developers</a></li>
+            <li><a class="text" href="#">Another one</a></li>
+            <li><a class="text" href="#">Last time</a></li>
+          </ul>
+        </div>
+        <div class="col-md-auto">
+          <h5>Resources</h5>
+          <ul class="list-unstyled text-small">
+            <li><a class="text" href="#">Resource</a></li>
+            <li><a class="text" href="#">Resource name</a></li>
+            <li><a class="text" href="#">Another resource</a></li>
+            <li><a class="text" href="#">Final resource</a></li>
+          </ul>
+        </div>
+        <div class="col-md-auto">
+          <h5>About</h5>
+          <ul class="list-unstyled text-small">
+            <li><a class="text" href="#">Team</a></li>
+            <li><a class="text" href="#">Locations</a></li>
+            <li><a class="text" href="#">Privacy</a></li>
+            <li><a class="text" href="#">Terms</a></li>
+          </ul>
+        </div>
+        <div class="col-md-auto"></div>
+      </div>
+
+      <div class="row" style="padding-right: 15%;padding-left: 15%;">
+        <div class="col-2"></div>
+        <div class="col-md-auto">
+          <p>
+              Copyright Information<small class="d-block mb-3 text-muted">© 2017-2020</small>
+          </p>
+          <p class="d-block mb-3 text-muted">
+          When you visit or interact with our site,services or tools,we or our authorised service providers may use cookies for storing information to help provide you with a better,faster and safer experience and for marketing purposes.
+          </p>
+          </div>
+          <div class="col-2"></div>
+      </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>    
+    <script src="https://cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/selectivizr/1.0.3b/selectivizr.min.js"></script> 
+    <script src="{% static 'vendors/js/jquery.waypoints.min.js' %}"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script> -->
+  </body>
 </body>
 </html>

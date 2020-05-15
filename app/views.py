@@ -8,3 +8,7 @@ from .models import Post
 def home(request):
     context = {'posts': Post.objects.all()}
     return render(request, 'app/home.html', context)
+
+def dev_page(request):
+    context = {}
+    return render(request, 'app/dev.html', context);

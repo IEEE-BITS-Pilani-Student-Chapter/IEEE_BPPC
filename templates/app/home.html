@@ -1,12 +1,560 @@
 {% extends 'base.html' %}
-{% block title %}
-Home
-{% endblock %}
+{% load static %}
 {% block content %}
-    STAY AT HOME!
-    {% for post in posts %}
-        <h2>{{ post.title }}</h2>
-        <p>{{ post.content }}</p>
-        <p>{{ post.author }}</p>
-    {% endfor %}
+<header>
+<div class="hero-text-box">
+  <div id="hea"><h1><strong>Some Random Text Maybe.</strong><br><h3>If we are not using parallax then it can work.</div></h3><br><br></h1>
+  <a class="btn btn-full js--scroll-to-plans" href="#">Learn More</a>
+</div> 
+</header>           
+<div class="container" style="padding-top:3em;padding-bottom: 3em;">
+  <div class="row" style="padding-bottom: 1.5em; color:white;">
+    <div class="col" style="color:black;">
+      <h2 class="text-center" ><b>WHAT'S BUZZING</b></h2>
+      <p class="long-copy" align="center">
+        Lorem ipsum dolor sit amet consectetur.
+      </p>
+    </div>
+  </div>
+  <div class="row" style="margin-left: 10%;margin-right: 10%;">
+    <div class="col-lg-4 col-md">
+      <div style="margin: 1.5rem;">
+          <img src="{% static 'img/berlin.jpg' %}" class="rounded-circle mx-auto border border-dark" alt="" style="width: 100%;height: 11em;">
+          <h5 class="text-center" style="padding-top: 15%;">Card title</h5>
+          <p class="text-center" style="padding-top: 10%;">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <center><a href="#" class="btn btn-primary">More</a></center>
+        </div>
+    </div>
+    <div class="col-lg-4 col-md">
+      <div class="card-body">
+          <img src="{% static 'img/berlin.jpg' %}" class="rounded-circle mx-auto border border-dark" alt="" style="width: 100%;height: 11em;">
+          <h5 class="text-center" style="padding-top: 15%;">Card title</h5>
+          <p class="text-center" style="padding-top: 10%;">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <center><a href="#" class="btn btn-primary">More</a></center>
+        </div>
+    </div>
+    <div class="col-lg-4 col-md">
+      <div class="card-body">
+          <img src="{% static 'img/berlin.jpg' %}" class="rounded-circle mx-auto border border-dark" alt="" style="width: 100%;height: 11em;">
+          <h5 class="text-center" style="padding-top: 15%;">Card title</h5>
+          <p class="text-center" style="padding-top: 10%;">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <center><a href="#" class="btn btn-primary">More</a></center>
+        </div>
+    </div>
+</div>
+</div>
+<div class="container blog">
+
+  <!-- Three columns of text below the carousel -->
+  
+</div>
+  
+<div class="row">
+
+<div class="container-fluid" style="padding-top:3em;padding-bottom: 3em;background: transparent linear-gradient(180deg, #2D47A9 0%, #297C82 100%) 0% 0% no-repeat padding-box;border: 1px solid #707070;opacity: 1;">
+  <div class="row" style="padding-bottom: 1.5em; color:white;">
+    <div class="col">
+      <h2 class="text-center"><b>Community</b></h2>
+      <p class="long-copy" align="center">
+        The branch is a group of dedicated volunteers and the foundational level of global IEEE network which aims to spark in the members an unwavering flame of innovation and ingenuity not just as students but for always no matter what their professions and avenues.
+      </p>
+    </div>
+  </div><!--
+<div class="row" style="padding-left: 10%; padding-right: 10%;">
+
+  <div class="col-md-4">
+    <div class="card mb-4 shadow-sm">
+      <img class="card-img-top" src="{% static 'img/berlin.jpg' %}" alt="Card image cap">
+      <div class="card-body">
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="card mb-4 shadow-sm">
+      <img class="card-img-top" src="{% static 'img/berlin.jpg' %}" alt="Card image cap">
+      <div class="card-body">
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="card mb-4 shadow-sm">
+      <img class="card-img-top" src="{% static 'img/berlin.jpg' %}" alt="Card image cap">
+      <div class="card-body">
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      </div>
+    </div>
+  </div>
+</div>-->
+<div class="row" >
+  <div class="contawfiner">
+    <div class="containery">
+      
+      <div class="community-box two">
+        <img class="card-img-top" src="{% static 'img/berlin.jpg' %}" alt="Card image cap">
+          <div class="card-body">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+      </div>
+      <div class="community-box three">
+        <img class="card-img-top" src="{% static 'img/berlin.jpg' %}" alt="Card image cap">
+          <div class="card-body">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+      </div>
+      <div class="community-box four">
+        <img class="card-img-top" src="{% static 'img/berlin.jpg' %}" alt="Card image cap">
+          <div class="card-body">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+      </div>
+      
+    </div>
+  
+  </div>
+    
+  </div>
+  
+</div>
+
+<div class="container" style="padding-top: 4em;">
+  <div class="row" style="padding-bottom: 1.5em;">
+    <div class="col-1"></div>
+    <div class="col-10">
+      <h2 class="text-center">BLOGS</h2>
+      <h4 align="center">Lorem ipsum dolor sit amet consectetur.</h4>
+    </div>
+    <div class="col-1"></div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-4">
+      <div class="card mb-4 shadow-sm">
+        <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+        <div class="card-body">
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+              <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+              
+            </div>
+            <small class="text-muted">9 mins</small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card mb-4 shadow-sm">
+        <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+        <div class="card-body">
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+              <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+              
+            </div>
+            <small class="text-muted">9 mins</small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card mb-4 shadow-sm">
+        <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+        <div class="card-body">
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+              <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+              
+            </div>
+            <small class="text-muted">9 mins</small>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card mb-4 shadow-sm">
+        <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+        <div class="card-body">
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+              <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+              
+            </div>
+            <small class="text-muted">9 mins</small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card mb-4 shadow-sm">
+        <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+        <div class="card-body">
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+              <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+              
+            </div>
+            <small class="text-muted">9 mins</small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card mb-4 shadow-sm">
+        <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+        <div class="card-body">
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+              <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+              
+            </div>
+            <small class="text-muted">9 mins</small>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card mb-4 shadow-sm">
+        <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+        <div class="card-body">
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+              <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+              
+            </div>
+            <small class="text-muted">9 mins</small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      
+      <div class="card mb-4 shadow-sm">
+        <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+        <div class="card-body">
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+              <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+              
+            </div>
+            <small class="text-muted">9 mins</small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card mb-4 shadow-sm">
+        <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+        <div class="card-body">
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+              <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+              
+            </div>
+            <small class="text-muted">9 mins</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<section class="time">
+<div class="container-fluid" style="padding-top: 4em;">
+  <div class="row" style="padding-bottom: 1.5em;">
+    <div class="col-1"></div>
+    <div class="col-10">
+      <h2 class="text-center">Timeline</h2>
+      <h4 align="center">Lorem ipsum dolor sit amet consectetur.</h4>
+    </div>
+    <div class="col-1"></div>
+  </div>
+  <div class="container">
+    
+    <ul class="timeline">
+        <li>
+          <div class="timeline-badge"><i class="glyphicon glyphicon-check"></i></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title">Mussum ipsum cacilds</h4>
+              <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 11 hours ago via Twitter</small></p>
+            </div>
+            <div class="timeline-body">
+              <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
+            </div>
+          </div>
+        </li>
+        <li class="timeline-inverted">
+          <div class="timeline-badge warning"><i class="glyphicon glyphicon-credit-card"></i></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title">Mussum ipsum cacilds</h4>
+            </div>
+            <div class="timeline-body">
+              <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
+              <p>Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis. Interagi no mé, cursus quis, vehicula ac nisi. Aenean vel dui dui. Nullam leo erat, aliquet quis tempus a, posuere ut mi. Ut scelerisque neque et turpis posuere pulvinar pellentesque nibh ullamcorper. Pharetra in mattis molestie, volutpat elementum justo. Aenean ut ante turpis. Pellentesque laoreet mé vel lectus scelerisque interdum cursus velit auctor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ac mauris lectus, non scelerisque augue. Aenean justo massa.</p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="timeline-badge danger"><i class="glyphicon glyphicon-credit-card"></i></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title">Mussum ipsum cacilds</h4>
+            </div>
+            <div class="timeline-body">
+              <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
+            </div>
+          </div>
+        </li>
+        
+        
+        
+        <li class="timeline-inverted">
+          <div class="timeline-badge success"><i class="glyphicon glyphicon-thumbs-up"></i></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title">Mussum ipsum cacilds</h4>
+            </div>
+            <div class="timeline-body">
+              <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
+            </div>
+          </div>
+        </li>
+    </ul>
+</div>
+</div>  
+</section>
+
+
+
+<div class="container-fluid" style="padding-top: 4em;">
+    <h3 class="text-center">Our Team</h3><br>
+    <h4 class="text-center">Lorem ipsum dolor sit amet consectetur.</h4>
+    <div class="row" style="padding-top: 3em;"></div>
+    <div class="col">
+    <ul id="hexGrid">
+      <li class="hex">
+        <div class="hexIn">
+          <a class="hexLink" href="#">
+            <div class='img' ><img src="{% static 'img/berlin.jpg' %}" alt="Card image cap"></div>
+            
+          </a>
+        </div>
+      </li>
+        
+      <li class="hex">
+        <div class="hexIn">
+          <a class="hexLink" href="#">
+                <div class='img'><img src="{% static 'img/berlin.jpg' %}" alt="Card image cap"></div>
+            <h1 id="demo1">This is a title</h1>
+            <p id="demo2">Some sample text about the article this hexagon leads to</p>
+          </a>
+        </div>
+      </li>
+      <li class="hex">
+        <div class="hexIn">
+          <a class="hexLink" href="#">
+            <div class='img'><img src="{% static 'img/berlin.jpg' %}" alt="Card image cap"></div>
+            <h1 id="demo1">This is a title</h1>
+            <p id="demo2">Some sample text about the article this hexagon leads to</p>
+          </a>
+        </div>
+      </li>
+      <li class="hex">
+        <div class="hexIn">
+          <a class="hexLink" href="#">
+            <div class='img' ><img src="{% static 'img/berlin.jpg' %}" alt="Card image cap"></div>
+            <h1 id="demo1">This is a title</h1>
+            <p id="demo2">Some sample text about the article this hexagon leads to</p>
+          </a>
+        </div>
+      </li>
+      <li class="hex">
+        <div class="hexIn">
+          <a class="hexLink" href="#">
+            <div class='img'><img src="{% static 'img/berlin.jpg' %}" alt="Card image cap"></div>
+            <h1 id="demo1">This is a title</h1>
+            <p id="demo2">Some sample text about the article this hexagon leads to</p>
+          </a>
+        </div>
+      </li>
+      <li class="hex">
+        <div class="hexIn">
+          <a class="hexLink" href="#">
+         <div class='img' ><img src="{% static 'img/berlin.jpg' %}" alt="Card image cap"></div>
+            <h1 id="demo1">This is a title</h1>
+            <p id="demo2">Some sample text about the article this hexagon leads to</p>
+          </a>
+        </div>
+      </li>
+      <li class="hex">
+        <div class="hexIn">
+          <a class="hexLink" href="#">
+            <div class='img' ><img src="{% static 'img/berlin.jpg' %}" alt="Card image cap"></div>
+            <h1 id="demo1">This is a title</h1>
+            <p id="demo2">Some sample text about the article this hexagon leads to</p>
+          </a>
+        </div>
+      </li>
+      <li class="hex">
+        <div class="hexIn">
+          <a class="hexLink" href="#">
+            <div class='img'><img src="{% static 'img/berlin.jpg' %}" alt="Card image cap"></div>
+            <h1 id="demo1">This is a title</h1>
+            <p id="demo2">Some sample text about the article this hexagon leads to</p>
+          </a>
+        </div>
+      </li>
+      <li class="hex">
+        <div class="hexIn">
+          <a class="hexLink" href="#">
+            <div class='img'><img src="{% static 'img/berlin.jpg' %}" alt="Card image cap"></div>
+            <h1 id="demo1">This is a title</h1>
+            <p id="demo2">Some sample text about the article this hexagon leads to</p>
+          </a>
+        </div>
+      </li>
+      
+     <li class="hex">
+        <div class="hexIn">
+          <a class="hexLink" href="#">
+            <div class='img'><img src="{% static 'img/berlin.jpg' %}" alt="Card image cap"></div>
+            <h1 id="demo1">This is a title</h1>
+            <p id="demo2">Some sample text about the article this hexagon leads to</p>
+          </a>
+        </div>
+      </li>
+        <li class="hex">
+        <div class="hexIn">
+          <a class="hexLink" href="#">
+            <div class='img'><img src="{% static 'img/berlin.jpg' %}" alt="Card image cap"></div>
+            <h1 id="demo1">This is a title</h1>
+            <p id="demo2">Some sample text about the article this hexagon leads to</p>
+          </a>
+        </div>
+      </li>
+          <li class="hex">
+        <div class="hexIn">
+          <a class="hexLink" href="#">
+                <div class='img' ><img src="{% static 'img/berlin.jpg' %}" alt="Card image cap"></div>
+            <h1 id="demo1">This is a title</h1>
+            <p id="demo2">Some sample text about the article this hexagon leads to</p>
+          </a>
+        </div>
+      </li>
+        <li class="hex">
+        <div class="hexIn">
+          <a class="hexLink" href="#">
+            <div class='img' ><img src="{% static 'img/berlin.jpg' %}" alt="Card image cap"></div>
+            <h1 id="demo1">This is a title</h1>
+            <p id="demo2">Some sample text about the article this hexagon leads to</p>
+          </a>
+        </div>
+      </li>
+        <li class="hex">
+        <div class="hexIn">
+          <a class="hexLink" href="#">
+            <div class='img' ><img src="{% static 'img/berlin.jpg' %}" alt="Card image cap"></div>
+            <h1 id="demo1">This is a title</h1>
+            <p id="demo2">Some sample text about the article this hexagon leads to</p>
+          </a>
+        </div>
+      </li>
+        <li class="hex">
+        <div class="hexIn">
+          <a class="hexLink" href="#">
+            <div class='img' ><img src="{% static 'img/berlin.jpg' %}" alt="Card image cap"></div>
+            <h1 id="demo1">This is a title</h1>
+            <p id="demo2">Some sample text about the article this hexagon leads to</p>
+          </a>
+        </div>
+      </li>
+      <li class="hex">
+        <div class="hexIn">
+          <a class="hexLink" href="#">
+                <div class='img'><img src="{% static 'img/berlin.jpg' %}" alt="Card image cap"></div>
+            <h1 id="demo1">This is a title</h1>
+            <p id="demo2">Some sample text about the article this hexagon leads to</p>
+          </a>
+        </div>
+      </li>
+      <li class="hex">
+        <div class="hexIn">
+          <a class="hexLink" href="#">
+            <div class='img'><img src="{% static 'img/berlin.jpg' %}" alt="Card image cap"></div>
+            <h1 id="demo1">This is a title</h1>
+            <p id="demo2">Some sample text about the article this hexagon leads to</p>
+          </a>
+        </div>
+      </li>
+      <li class="hex">
+        <div class="hexIn">
+          <a class="hexLink" href="#">
+            <div class='img' ><img src="{% static 'img/berlin.jpg' %}" alt="Card image cap"></div>
+            <h1 id="demo1">This is a title</h1>
+            <p id="demo2">Some sample text about the article this hexagon leads to</p>
+          </a>
+        </div>
+      </li>
+      <li class="hex">
+        <div class="hexIn">
+          <a class="hexLink" href="#">
+            <div class='img'><img src="{% static 'img/berlin.jpg' %}" alt="Card image cap"></div>
+            <h1 id="demo1">This is a title</h1>
+            <p id="demo2">Some sample text about the article this hexagon leads to</p>
+          </a>
+        </div>
+      </li>
+      <li class="hex">
+        <div class="hexIn">
+          <a class="hexLink" href="#">
+            <div class='img'><img src="{% static 'img/berlin.jpg' %}" alt="Card image cap"></div>
+            <h1 id="demo1">This is a title</h1>
+            <p id="demo2">Some sample text about the article this hexagon leads to</p>
+          </a>
+        </div>
+      </li>
+      <li class="hex">
+        <div class="hexIn">
+          <a class="hexLink" href="#">
+               <div class='img'><img src="{% static 'img/berlin.jpg' %}" alt="Card image cap"></div>
+            <h1 id="demo1">This is a title</h1>
+            <p id="demo2">Some sample text about the article this hexagon leads to</p>
+          </a>
+        </div>
+      </li>
+      <li class="hex">
+        <div class="hexIn">
+          <a class="hexLink" href="#">
+            <div class='img'><img src="{% static 'img/berlin.jpg' %}" alt="Card image cap"></div>
+            <h1 id="demo1">This is a title</h1>
+            <p id="demo2">Some sample text about the article this hexagon leads to</p>
+          </a>
+        </div>
+      </li>
+      <li class="hex">
+        <div class="hexIn">
+          <a class="hexLink" href="#">
+            <div class='img'><img src="{% static 'img/berlin.jpg' %}" alt="Card image cap"></div>
+            <h1 id="demo1">This is a title</h1>
+            <p id="demo2">Some sample text about the article this hexagon leads to</p>
+          </a>
+        </div>
+      </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<script src="{% static 'js/script.js' %}"></script>
 {% endblock %}
