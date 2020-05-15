@@ -24,7 +24,6 @@ def blog_view(request):
     context = {}
     return render(request, 'app/blog_view.html', context)
 
-
 def post_image_view(request):
     if request.method == 'POST':
         form = PostForm(request.POST, request.FILES)
@@ -35,7 +34,6 @@ def post_image_view(request):
     else:
         form = PostForm()
     return render(request, 'app/post_form.html', {'form': form})
-
 
 def success(request):
     return HttpResponse('successfully uploaded')
