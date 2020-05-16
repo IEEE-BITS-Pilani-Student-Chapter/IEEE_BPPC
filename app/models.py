@@ -1,25 +1,27 @@
 from django.db import models
 from django.utils import timezone
 from django.contrib.auth.models import User
-
+from django.urls import reverse
 
 class Post(models.Model):
     title = models.CharField(max_length=80)
     content = models.TextField()
-    date_posted = models.DateTimeField(default=timezone.now)
-    date_modified = models.DateTimeField(auto_now=True)
+    timestamp = models.DateTimeField(default=timezone.now)
     author = models.CharField(max_length=40)
-    img = models.ImageField(upload_to='images/')
-
-class Developers(models.Model):
-    Name = models.CharFeilds(max_length = 30)
-    Post = models.CharFeilds(max_length = 30)
-    Pic = models.ImageField(upload_to="gallery")
-    img src="/media/person.png"
-    Bio = models.CharFeilds(max_Length = 200)
-    class Social_links(models.Model):
-        Github = models.URLFeild(_("git"),max_length=128,db_index = True, unique=True, blank=True)
-        LinkedIn = models.URLFeild(_("LinkedIn"),max_length=128,db_index = True, unique=True, blank=True)
+    img = models.ImageField(upload_to='post/', editable=True, blank=True)
 
     def __str__(self):
         return self.title
+    def get_absolute_url(self):
+        return reverse('blog_view', kwargs={'pk': self.pk})
+
+class Developers(models.Model):
+    name = models.CharField(max_length = 30)
+    post = models.CharField(max_length = 30)
+    pic = models.ImageField(upload_to="developer/", editable=True, blank=True, default='person.png')
+    bio = models.CharField(max_length = 250)
+    git = models.URLField(max_length=130, unique=True, blank=True)
+    linkein = models.URLField(max_length=130, unique=True, blank=True)
+
+    def __str__(self):
+        return self.name

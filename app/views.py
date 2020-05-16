@@ -2,7 +2,7 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from django.shortcuts import redirect
 
-from .models import Post
+from .models import Post, Developers
 from .forms import PostForm
 
 
