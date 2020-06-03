@@ -6,7 +6,7 @@ from django.conf import settings
 urlpatterns = [
     path('', home, name="home"),
     path('blogs/', blog_list, name='blogs'),
-    path('blogs/detail', blog_view, name='blog_view'),
+    path('blogs/<int:pk>/', blog_view, name='blog_view'),
     path('developers/', dev_page, name='dev_page'),
     path('image_upload', post_image_view, name='image_upload'),
     path('success', success, name='success'),
