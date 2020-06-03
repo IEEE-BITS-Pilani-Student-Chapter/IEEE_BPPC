@@ -75,11 +75,11 @@
 			{% for e in extra %}
 			<div class="col-md-4">
 				<div class="card">
-					<a href="{{e.get_absolute_url}}">
-					<img class="img-fluid img-thumb" src="{{e.img.url}}" alt="">
+					<a href="{{e.get_absolute_url}}" style="height: 12em;">
+					<img class="img-fluid img-thumb" src="{{e.img.url}}" style="height: 12em;">
 					</a>
 					<div class="card-block">
-						<h2 class="card-title"><a href="{{e.get_absolute_url}}">{{e.title|title}}</a></h2>
+						<h2 class="card-title" style="height: 4em;"><a href="{{e.get_absolute_url}}">{{e.title|title}}</a></h2>
 						<div class="metafooter">
 							<div class="wrapfooter">
 								<span class="meta-footer-thumb">

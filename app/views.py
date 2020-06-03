@@ -9,9 +9,11 @@ import random
 
 def home(request):
     posts = Post.objects.all()
-    cnt = int(posts.count()/3);
+    cnt = posts.count()
     if cnt>6:
         cnt = 6
+    elif cnt>=3:
+        cnt = 3
     posts = posts[0:cnt]
     context = {'posts': posts}
     return render(request, 'app/home.html', context)
