@@ -4,9 +4,9 @@
 <header>
 <div class="hero-text-box">
   <div id="hea"><h1><strong>Welcome to
-    IEEE <br> BITS Pilani, Pilani Campus Student Branch
+    IEEE <br> BITS Pilani, Student chapter
     </strong><br><br></h1>
-  <a class="btn btn-full js--scroll-to-plans" href="#">Learn More</a>
+  <a class="btn btn-full js--scroll-to-plans learn" id="tohide" href="#">Learn More</a>
 </div> 
 </header>           
 <div class="container" style="padding-top:3em;padding-bottom: 3em;">
@@ -133,7 +133,7 @@
     
     <ul class="timeline">
         <li>
-          <div class="timeline-badge"><i class="glyphicon glyphicon-check"></i></div>
+          <div class="timeline-badge warning"><i class="glyphicon glyphicon-check"></i></div>
           <div class="timeline-panel">
             <div class="timeline-heading">
               <h4 class="timeline-title">Instituted on Campus in 2012.</h4>
@@ -168,14 +168,7 @@
               <p>Publication of annual Journal - TechRevIEEEw also began from the year 2018.</p>
             </div>
         </li>
-        <li>
-          <div class="timeline-badge danger"><i class="glyphicon glyphicon-credit-card"></i></div>
-          <div class="timeline-panel">
-            <div class="timeline-body">
-              <p>Launching the website in 2020 and looking forward to gathering more feathers in our hat.</p>
-            </div>
-          </div>
-        </li>
+        
     </ul>
 </div>
 </div>  
@@ -187,18 +180,11 @@
     <div class="row" style="padding-top: 3em;"></div>
     <div class="col">
     <ul id="hexGrid">
+      
       <li class="hex">
         <div class="hexIn">
           <a class="hexLink" href="#">
-            <div class='img' ><img src="{% static 'img/berlin.jpg' %}" alt="Card image cap"></div>
-            
-          </a>
-        </div>
-      </li>
-      <li class="hex">
-        <div class="hexIn">
-          <a class="hexLink" href="#">
-                <div class='img'><img src="{% static 'img/berlin.jpg' %}" alt="Card image cap"></div>
+            <div class='img' ><img style="width:60px;height:auto; "src="{% static 'img/IMG-20200308-WA0020 - VAIBHAV GANDOTRA.jpg' %}" alt="Card image cap"></div>
             <h1 id="demo1">This is a title</h1>
             <p id="demo2">Some sample text about the article this hexagon leads to</p>
           </a>
@@ -207,7 +193,7 @@
       <li class="hex">
         <div class="hexIn">
           <a class="hexLink" href="#">
-            <div class='img'><img src="{% static 'img/berlin.jpg' %}" alt="Card image cap"></div>
+            <div class='img' ><img src="{% static 'img/IMG_20190104_172554 - Rajebhosale Omkar Veersingh.jpg' %}" alt="Card image cap"></div>
             <h1 id="demo1">This is a title</h1>
             <p id="demo2">Some sample text about the article this hexagon leads to</p>
           </a>
@@ -216,7 +202,8 @@
       <li class="hex">
         <div class="hexIn">
           <a class="hexLink" href="#">
-            <div class='img' ><img src="{% static 'img/berlin.jpg' %}" alt="Card image cap"></div>
+            <div class='img' ><img src="{% static 'img/IMG_20200215_151133 - ANIKET UPADHYAY.jpg' %}" 
+              alt="Card image cap"></div>
             <h1 id="demo1">This is a title</h1>
             <p id="demo2">Some sample text about the article this hexagon leads to</p>
           </a>
@@ -225,7 +212,8 @@
       <li class="hex">
         <div class="hexIn">
           <a class="hexLink" href="#">
-            <div class='img'><img src="{% static 'img/berlin.jpg' %}" alt="Card image cap"></div>
+            <div class='img' ><img src="{% static 'img/IMG_20180826_121731__01__01 - SIGILIPELLI LAKSHMI TARUN.jpg' %}" 
+              alt="Card image cap"></div>
             <h1 id="demo1">This is a title</h1>
             <p id="demo2">Some sample text about the article this hexagon leads to</p>
           </a>
@@ -234,7 +222,7 @@
       <li class="hex">
         <div class="hexIn">
           <a class="hexLink" href="#">
-         <div class='img' ><img src="{% static 'img/berlin.jpg' %}" alt="Card image cap"></div>
+            <div class='img'><img src="{% static 'img/IMG_20190407_003900-1 - SHAH PRIYAM HITEN VANDANA.jpg' %}" alt="Card image cap"></div>
             <h1 id="demo1">This is a title</h1>
             <p id="demo2">Some sample text about the article this hexagon leads to</p>
           </a>
@@ -243,7 +231,7 @@
       <li class="hex">
         <div class="hexIn">
           <a class="hexLink" href="#">
-            <div class='img' ><img src="{% static 'img/berlin.jpg' %}" alt="Card image cap"></div>
+         <div class='img' ><img src="{% static 'img/ayushi.jpg' %}" alt="Card image cap"></div>
             <h1 id="demo1">This is a title</h1>
             <p id="demo2">Some sample text about the article this hexagon leads to</p>
           </a>
@@ -252,7 +240,7 @@
       <li class="hex">
         <div class="hexIn">
           <a class="hexLink" href="#">
-            <div class='img'><img src="{% static 'img/berlin.jpg' %}" alt="Card image cap"></div>
+            <div class='img' ><img src="{% static 'img/IMG_20200309_114259 - DIVYESH NARAYANAN.jpg' %}" alt="Card image cap"></div>
             <h1 id="demo1">This is a title</h1>
             <p id="demo2">Some sample text about the article this hexagon leads to</p>
           </a>
@@ -261,25 +249,44 @@
       <li class="hex">
         <div class="hexIn">
           <a class="hexLink" href="#">
-            <div class='img'><img src="{% static 'img/berlin.jpg' %}" alt="Card image cap"></div>
+            <div class='img'><img src="{% static 'img/IMG-20190707-WA0015 - JASH SHAH.jpg' %}" alt="Card image cap"></div>
             <h1 id="demo1">This is a title</h1>
             <p id="demo2">Some sample text about the article this hexagon leads to</p>
           </a>
         </div>
       </li>
-     <li class="hex">
+      <li class="hex">
         <div class="hexIn">
           <a class="hexLink" href="#">
-            <div class='img'><img src="{% static 'img/berlin.jpg' %}" alt="Card image cap"></div>
+            <div class='img' ><img src="{% static 'img/Akash.jpg' %}" alt="Card image cap"></div>
             <h1 id="demo1">This is a title</h1>
             <p id="demo2">Some sample text about the article this hexagon leads to</p>
           </a>
         </div>
       </li>
+      <li class="hex">
+        <div class="hexIn">
+          <a class="hexLink" href="#">
+            <div class='img'><img src="{% static 'img/harshit.jpg' %}" alt="Card image cap"></div>
+            <h1 id="demo1">This is a title</h1>
+            <p id="demo2">Some sample text about the article this hexagon leads to</p>
+          </a>
+        </div>
+      </li>
+      <li class="hex">
+        <div class="hexIn">
+          <a class="hexLink" href="#">
+            <div class='img'><img src="{% static 'img/mayank.jpg' %}" alt="Card image cap"></div>
+            <h1 id="demo1">This is a title</h1>
+            <p id="demo2">Some sample text about the article this hexagon leads to</p>
+          </a>
+        </div>
+      </li>
+     
         <li class="hex">
         <div class="hexIn">
           <a class="hexLink" href="#">
-            <div class='img'><img src="{% static 'img/berlin.jpg' %}" alt="Card image cap"></div>
+            <div class='img'><img src="{% static 'img/19E64724-F4FC-4EB2-A152-84F509F1A660 - EKANSH GUPTA.jpeg' %}" alt="Card image cap"></div>
             <h1 id="demo1">This is a title</h1>
             <p id="demo2">Some sample text about the article this hexagon leads to</p>
           </a>
@@ -288,7 +295,17 @@
           <li class="hex">
         <div class="hexIn">
           <a class="hexLink" href="#">
-                <div class='img' ><img src="{% static 'img/berlin.jpg' %}" alt="Card image cap"></div>
+                <div class='img' ><img src="{% static 'img/sid.jpg' %}" alt="Card image cap"></div>
+            <h1 id="demo1">This is a title</h1>
+            <p id="demo2">Some sample text about the article this hexagon leads to</p>
+          </a>
+        </div>
+      </li>
+        
+        <li class="hex">
+        <div class="hexIn">
+          <a class="hexLink" href="#">
+            <div class='img' ><img src="{% static 'img/ishaan.jpeg' %}" alt="Card image cap"></div>
             <h1 id="demo1">This is a title</h1>
             <p id="demo2">Some sample text about the article this hexagon leads to</p>
           </a>
@@ -297,25 +314,7 @@
         <li class="hex">
         <div class="hexIn">
           <a class="hexLink" href="#">
-            <div class='img' ><img src="{% static 'img/berlin.jpg' %}" alt="Card image cap"></div>
-            <h1 id="demo1">This is a title</h1>
-            <p id="demo2">Some sample text about the article this hexagon leads to</p>
-          </a>
-        </div>
-      </li>
-        <li class="hex">
-        <div class="hexIn">
-          <a class="hexLink" href="#">
-            <div class='img' ><img src="{% static 'img/berlin.jpg' %}" alt="Card image cap"></div>
-            <h1 id="demo1">This is a title</h1>
-            <p id="demo2">Some sample text about the article this hexagon leads to</p>
-          </a>
-        </div>
-      </li>
-        <li class="hex">
-        <div class="hexIn">
-          <a class="hexLink" href="#">
-            <div class='img' ><img src="{% static 'img/berlin.jpg' %}" alt="Card image cap"></div>
+            <div class='img' ><img src="{% static 'img/IMG_20190905_214010 - ROSHAN RAKESH AGRAWAL.jpg' %}" alt="Card image cap"></div>
             <h1 id="demo1">This is a title</h1>
             <p id="demo2">Some sample text about the article this hexagon leads to</p>
           </a>
@@ -324,7 +323,7 @@
       <li class="hex">
         <div class="hexIn">
           <a class="hexLink" href="#">
-                <div class='img'><img src="{% static 'img/berlin.jpg' %}" alt="Card image cap"></div>
+                <div class='img'><img src="{% static 'img/PIC2 - CHANDRA SEKHAR REDDY E.jpg' %}" alt="Card image cap"></div>
             <h1 id="demo1">This is a title</h1>
             <p id="demo2">Some sample text about the article this hexagon leads to</p>
           </a>

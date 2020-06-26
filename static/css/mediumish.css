@@ -3,7 +3,7 @@ Template Name:Mediumish
 Copyright:WowThemes.net,https://www.wowthemes.net
 Version:1.0.1
 License: https://www.wowthemes.net/freebies-license/
-*/
+*/  
 body {
 	padding-top:5rem;
 }
@@ -91,6 +91,7 @@ section {
 	font-size:0.95rem;
 	line-height:1.4;
 	font-weight:400;
+	padding-left:10px;
 }
 .listfeaturedtag .wrapfooter {
 	position:absolute;
@@ -107,7 +108,7 @@ section {
 	width:40px;
 	height:40px;
 	float:left;
-	margin-right:13px;
+	margin:10px;
 	border-radius:100%;
 }
 .post-top-meta {
@@ -138,6 +139,7 @@ section {
 }
 span.post-name,span.post-date,span.author-meta {
 	display:inline-block;
+	margin-top:10px;
 }
 span.post-date,span.post-read {
 	color:rgba(0,0,0,.44);
@@ -204,6 +206,10 @@ span.post-name a,span.post-read-more a:hover {
 .mainheading h1.posttitle {
 	font-weight:700;
 	margin-bottom:1rem;
+	
+}
+.mainheading h4.posttitle{
+	margin-top:30px;
 }
 .footer {
 	border-top:1px solid rgba(0,0,0,.05)!important;
