@@ -754,6 +754,10 @@ footer p {
     0% no-repeat padding-box;
 }
 
+.card-img{
+  height: 10rem;
+}
+
 .sctin-comunity .cardy {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   max-width: 300px;
