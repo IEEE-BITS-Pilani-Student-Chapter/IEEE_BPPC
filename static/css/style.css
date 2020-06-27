@@ -166,6 +166,12 @@ input[type="submit"]:active {
 /* ----------------------------------------------- */
 /* HEADER */
 /* ----------------------------------------------- */
+@media (max-width: 600px) {
+  .about-head{
+    display: none;
+  }
+}
+
 .col-md-6 {
   margin-bottom: 10px;
 }
