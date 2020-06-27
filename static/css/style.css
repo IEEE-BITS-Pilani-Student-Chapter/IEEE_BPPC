@@ -172,7 +172,9 @@ input[type=submit]:active {
 /* ----------------------------------------------- */
 /* HEADER */
 /* ----------------------------------------------- */
-
+.col-md-6{
+  margin-bottom: 10px;
+}
 header {
     background-image:url(img/hero.jpg);
     /*background-image: linear-gradient(rgba(0, 255, 0, 0.0), rgba(0, 255, 0, 0.0)), url(img/hero.jpg);*/
