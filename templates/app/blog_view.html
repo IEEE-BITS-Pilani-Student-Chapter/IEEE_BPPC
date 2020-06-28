@@ -23,10 +23,6 @@
 				<h1 class="posttitle">{{post.title|title}}</h1>
 
 			</div>
-
-			<!-- Begin Featured Image -->
-			<img class="featured-image img-fluid" src="{{post.img.url}}" alt="" style="margin: 0;">
-			<!-- End Featured Image -->
 			<div class="row post-top-meta" style="margin: 0;padding: 0;">
 				<div class="col-2" style="padding: 0;">
 					<img class="author-thumb" src="{% static 'img/profile.jpg' %}" alt="{{post.author}}">
@@ -42,6 +38,9 @@
 					</a>
 				</div>
 			</div>
+			<!-- Begin Featured Image -->
+			<img class="featured-image img-fluid" src="{{post.img.url}}" alt="" style="margin: 0; padding-bottom: 2em; padding-top: 1em;">
+			<!-- End Featured Image -->
 			<!-- Begin Post Content -->
 			<div class="article-post">{{post.content}}</div>
 			<!-- End Post Content -->

@@ -172,6 +172,18 @@ input[type="submit"]:active {
   }
 }
 
+@media (min-width: 601px) {
+  footer{
+    padding-bottom: 4em !important;
+  }
+}
+
+@media (max-width: 600px) {
+  footer{
+    padding-bottom: 0 !important;
+  }
+}
+
 .col-md-6 {
   margin-bottom: 10px;
 }
@@ -484,11 +496,17 @@ footer p {
 #hexGrid {
   display: flex;
   flex-wrap: wrap;
-  width: 35%;
+  width: 40%;
   margin: 0 auto;
   overflow: hidden;
   font-family: sans-serif;
   list-style-type: none;
+}
+
+@media (max-width: 530px) {
+  #hexGrid {
+    width: 60%;
+  }
 }
 
 .hex {
@@ -990,11 +1008,18 @@ footer a {
   margin-top: 5px;
 }
 
-.time {
-  background: transparent linear-gradient(180deg, #2d47a9 0%, #297c82 100%) 0%
-    0% no-repeat padding-box;
-  color: white;
-  width: 100%;
+@media (min-width: 530px) {
+  .time {
+    background: transparent linear-gradient(180deg, #2d47a9 0%, #297c82 100%) 0%
+      0% no-repeat padding-box;
+    color: white;
+    width: 100%;
+  }
+}
+@media (max-width: 530px) {
+  .time{
+    display: none;
+  }
 }
 
 .containery {
@@ -1134,4 +1159,11 @@ footer a {
 .contact-section-even {
   background: #1e2529;
   color: white;
+}
+
+/* WHAT'S BUZZING */
+@media (max-width: 762px){
+  .text-center{
+    height: auto !important;
+  }
 }
