@@ -1,1 +1,1 @@
-'web: gunicorn IEEE_BPPC.wsgi --log-file -' 
+web: gunicorn IEEE_BPPC.wsgi --log-file -
