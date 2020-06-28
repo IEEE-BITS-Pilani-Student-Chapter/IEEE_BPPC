@@ -81,20 +81,8 @@ WSGI_APPLICATION = 'IEEE_BPPC.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
-SERVER = os.environ.get('SERVER')
-
-if (SERVER==True):
-    DATABASES = {}
-    DATABASES['default'] = dj_database_url.config(conn_max_age=600)
-
-else:
-    DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.sqlite3',
-            'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-        }
-    }
-
+DATABASES = {}
+DATABASES['default'] = dj_database_url.config(conn_max_age=600)
 
 
 # Password validation
