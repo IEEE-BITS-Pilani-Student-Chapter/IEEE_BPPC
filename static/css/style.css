@@ -557,8 +557,8 @@ footer p {
 .hex img {
   left: -100%;
   right: -100%;
-  width: auto;
-  height: 100%;
+  width: auto !important;
+  height: 100% !important;
   margin: 0 auto;
 }
 
