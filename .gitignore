@@ -13,4 +13,3 @@ staticfiles
 *.log
 *.pot
 *.pyc
-.env
