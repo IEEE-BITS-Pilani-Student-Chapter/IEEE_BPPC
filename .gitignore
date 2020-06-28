@@ -3,11 +3,14 @@ myvenv
 .idea
 bin
 lib
-__pycache__
+__pycache__/
 migrations
 *.pyc
 db.sqlite3
 .DS_Store
 media/
-.env
 staticfiles
+*.log
+*.pot
+*.pyc
+.env
