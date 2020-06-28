@@ -204,9 +204,15 @@ span.post-name a,span.post-read-more a:hover {
 	font-family:Righteous;
 }
 .mainheading h1.posttitle {
+	font-size: 2rem !important;
 	font-weight:700;
 	margin-bottom:1rem;
 	
+}
+@media (max-width:600px){
+	.mainheading h1.posttitle {
+		font-size: 1.5rem !important;
+	}
 }
 .mainheading h4.posttitle{
 	margin-top:30px;
@@ -224,9 +230,14 @@ span.post-name a,span.post-read-more a:hover {
 }
 .article-post {
 	font-family:Merriweather;
-	font-size:1.2rem;
+	font-size:1rem;
 	line-height:1.8;
 	color:rgba(0,0,0,.8);
+}
+@media (max-width: 600px){
+	.article-post {
+		font-size: 0.8rem;
+	}
 }
 blockquote {
 	border-left:4px solid #00ab6b;

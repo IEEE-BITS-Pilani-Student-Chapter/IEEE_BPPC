@@ -1167,3 +1167,13 @@ footer a {
     height: auto !important;
   }
 }
+.buzz{
+  margin-left: 10% !important;
+  margin-right: 10% !important;
+}
+@media (max-width:1000px){
+  .buzz{
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}
