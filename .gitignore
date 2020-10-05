@@ -13,3 +13,4 @@ staticfiles
 *.log
 *.pot
 *.pyc
+mydatabase
