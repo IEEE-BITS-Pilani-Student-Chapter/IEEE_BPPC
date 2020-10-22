@@ -6,8 +6,8 @@ from ckeditor.fields import RichTextField
 
 class Post(models.Model):
     title = models.CharField(max_length=80)
-    # content = RichTextField(blank = True, null = True)
-    content = models.TextField()
+    content = RichTextField(blank = True, null = True)
+    # content = models.TextField()
     timestamp = models.DateTimeField(default=timezone.now)
     author = models.CharField(max_length=40)
     img = models.ImageField(upload_to='post/', editable=True, blank=True)
