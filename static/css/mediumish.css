@@ -3,13 +3,13 @@ Template Name:Mediumish
 Copyright:WowThemes.net,https://www.wowthemes.net
 Version:1.0.1
 License: https://www.wowthemes.net/freebies-license/
-*/
+*/  
 body {
 	padding-top:5rem;
 }
-.mainheading {
+/* .mainheading {
 	padding:1rem 0rem;
-}
+} */
 a {
 	color:#00ab6b;
 }
@@ -91,6 +91,7 @@ section {
 	font-size:0.95rem;
 	line-height:1.4;
 	font-weight:400;
+	padding-left:10px;
 }
 .listfeaturedtag .wrapfooter {
 	position:absolute;
@@ -107,7 +108,7 @@ section {
 	width:40px;
 	height:40px;
 	float:left;
-	margin-right:13px;
+	margin:10px;
 	border-radius:100%;
 }
 .post-top-meta {
@@ -138,6 +139,7 @@ section {
 }
 span.post-name,span.post-date,span.author-meta {
 	display:inline-block;
+	margin-top:10px;
 }
 span.post-date,span.post-read {
 	color:rgba(0,0,0,.44);
@@ -202,8 +204,18 @@ span.post-name a,span.post-read-more a:hover {
 	font-family:Righteous;
 }
 .mainheading h1.posttitle {
+	font-size: 2rem !important;
 	font-weight:700;
 	margin-bottom:1rem;
+	
+}
+@media (max-width:600px){
+	.mainheading h1.posttitle {
+		font-size: 1.5rem !important;
+	}
+}
+.mainheading h4.posttitle{
+	margin-top:30px;
 }
 .footer {
 	border-top:1px solid rgba(0,0,0,.05)!important;
@@ -218,9 +230,14 @@ span.post-name a,span.post-read-more a:hover {
 }
 .article-post {
 	font-family:Merriweather;
-	font-size:1.2rem;
+	font-size:1rem;
 	line-height:1.8;
 	color:rgba(0,0,0,.8);
+}
+@media (max-width: 600px){
+	.article-post {
+		font-size: 0.8rem;
+	}
 }
 blockquote {
 	border-left:4px solid #00ab6b;
